@@ -1,0 +1,10 @@
+@use '../../styles/mixin.scss' as mixin;
+
+
+.aboutMeSection {
+    @include mixin.default-section-style;
+
+    @include mixin.fonts-default-style;
+
+    
+}

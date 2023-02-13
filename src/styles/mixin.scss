@@ -1,0 +1,36 @@
+@mixin default-section-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+
+    padding: 16px;
+}
+
+@mixin fonts-default-style($text-align: center) {
+    h2 {
+        width: 100%;
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-bottom: 32px;
+        text-align: $text-align;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: justify;
+
+        margin-bottom: 24px;
+
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 :root {
     --background-color: #090909;
@@ -10,7 +12,9 @@
 
     --text-primary: #FFFFFF;
     --text-secondary: #A6A6A6;
+    --text-terciary: #1E1E1E;
 }
+
 
 html {
     font-size: 62.5%; // 1rem = 10px
@@ -36,7 +40,7 @@ button {
     outline: transparent;
 }
 
-h1 {
+h2 {
     color: var(--text-primary);
 }
 

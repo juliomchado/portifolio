@@ -1,0 +1,24 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.projectsSection {
+    @include mixin.default-section-style;
+    @include mixin.fonts-default-style;
+
+}
+
+
+.projects {
+
+    margin-bottom: 24px;
+
+    color: var(--text-primary);
+
+    span {
+        color: var(--text-primary);
+    }
+
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

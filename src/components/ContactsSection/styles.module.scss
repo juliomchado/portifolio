@@ -1,0 +1,46 @@
+@use '../../styles/mixin.scss'as mixin;
+
+
+.contactsSection {
+    @include mixin.default-section-style;
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+
+    ul {
+        width: 100%;
+
+
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 120px;
+
+        li {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            a {
+                svg {
+                    margin-bottom: 24px;
+                    color: var(--text-terciary);
+                }
+
+                transition: 0.5s filter;
+
+                &:hover{
+                    filter: brightness(1.4);
+                }
+            }
+        }
+    }
+}

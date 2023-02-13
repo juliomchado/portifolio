@@ -14,7 +14,7 @@ export function Header() {
                 <Link href="#">CONTATOS</Link>
                 <Link
                     href="#"
-                    className={style.action_link}
+                    className={style.actionLink}
                 >
                     QUERO UM PROJETO
                 </Link>

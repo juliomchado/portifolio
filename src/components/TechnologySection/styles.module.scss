@@ -1,0 +1,23 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.technologySection {
+    @include mixin.default-section-style;
+    @include mixin.fonts-default-style;
+
+}
+
+.technology {
+
+    margin-bottom: 24px;
+
+    color: var(--text-primary);
+
+    span {
+        color: var(--text-primary);
+    }
+
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
