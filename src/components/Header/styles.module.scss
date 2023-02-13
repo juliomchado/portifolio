@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+
+        color: var(--text-primary);
+
+        a {
+            font-weight: 500;
+            transition: 0.5s filter;
+
+            &:hover:not(.action_link) {
+                filter: brightness(0.7);
+            }
+        }
+
+    }
+}
+
+.action_link {
+    background-color: transparent;
+    color: var(--details-color);
+
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 4px; /* Adiciona 8 pixels de margem inferior */
+
+    transition: all 0.5s ease-in-out;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: -4px; /* Ajusta a posição da linha sublinhada */
+        right: 0;
+        height: 1px;
+
+        background-color: currentColor;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+
+        border-radius: 5px;
+    }
+
+    &:hover::after{
+        transform: scaleX(1);
+    }
+}
