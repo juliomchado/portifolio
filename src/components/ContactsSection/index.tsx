@@ -16,19 +16,19 @@ export default function ContactsSection() {
             <ul>
                 <li>
                     <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} width={48} />
+                        <FontAwesomeIcon icon={faLinkedin} className={style.svgStyle} />
                         <p>/in/juliomchado/</p>
                     </Link>
                 </li>
                 <li>
                     <Link href="#">
-                        <FontAwesomeIcon icon={faSquareEnvelope} width={48} />
+                        <FontAwesomeIcon icon={faSquareEnvelope} className={style.svgStyle} />
                         <p>juliocarlos00@hotmail.com</p>
                     </Link>
                 </li>
                 <li>
                     <Link href="#">
-                        <FontAwesomeIcon icon={faSquareGithub} width={48} />
+                        <FontAwesomeIcon icon={faSquareGithub} className={style.svgStyle} />
                         <p>/juliomchado</p>
                     </Link>
                 </li>
