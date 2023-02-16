@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 import style from './styles.module.scss';
+import LinkLikeButton from '../LinkLikeButton';
 
 export default function ContactsSection() {
 
@@ -15,13 +16,13 @@ export default function ContactsSection() {
             <ul>
                 <li>
                     <Link href="#">
-                        <FontAwesomeIcon icon={faLinkedin} width={48}/>
+                        <FontAwesomeIcon icon={faLinkedin} width={48} />
                         <p>/in/juliomchado/</p>
                     </Link>
                 </li>
                 <li>
                     <Link href="#">
-                        <FontAwesomeIcon icon={faSquareEnvelope} width={48}/>
+                        <FontAwesomeIcon icon={faSquareEnvelope} width={48} />
                         <p>juliocarlos00@hotmail.com</p>
                     </Link>
                 </li>
@@ -33,6 +34,13 @@ export default function ContactsSection() {
                 </li>
             </ul>
 
+            <span>OU</span>
+
+            <div>
+                <p> Clique no botão abaixo para me enviar detalhes sobre seu projeto ou vaga em aberto e vamos conversar sobre como posso ajudá-lo a alcançar seus objetivos.</p>
+
+                <LinkLikeButton href="#" size="md" text="Entrar em contato" />
+            </div>
         </section>
     )
 }
