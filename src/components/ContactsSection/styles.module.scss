@@ -4,17 +4,7 @@
 .contactsSection {
     @include mixin.default-section-style;
 
-    h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 32px;
-    }
-
-    p {
-        width: 100%;
-        text-align: center;
-
-    }
+    @include mixin.fonts-default-style($text-align-p: center);
 
     ul {
         width: 100%;
@@ -90,5 +80,20 @@
     height: 48px;
     width: 48px;
 
+
+}
+
+
+@media (max-width: 640px){
+    .contactsSection {
+        ul {
+            flex-direction: column;
+        
+        
+            li {
+                margin-bottom: 48px;
+            }
+        }
+    }
 
 }

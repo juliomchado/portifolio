@@ -1,8 +1,20 @@
-.mainStyle{
+.mainStyle {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     gap: 180px;
+
+
+
+}
+
+
+@media (max-width: 746px) {
+
+    .mainStyle {
+        gap: 80px;
+
+    }
 }

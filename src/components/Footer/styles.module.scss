@@ -18,6 +18,10 @@
 
     margin: auto;
 
+    @media (max-width: 1024px) {
+        padding: 32px;
+    
+    }
 
 }
 
@@ -63,7 +67,7 @@
 .linksDiv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
+    grid-gap: 24px;
 
 }
 
@@ -79,5 +83,15 @@
 
     p {
         font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 740px){
+    .linksContainer {
+
+        a {
+            margin-top: 80px;
+        }
     }
 }

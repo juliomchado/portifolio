@@ -2,8 +2,8 @@
 
 
 .imageSection {
-    height: 929px;
     width: 100%;
+    min-height: 929px;
     background-image: url(/cityimage.png);
     background-size: cover;
     background-position: center;
@@ -17,9 +17,21 @@
 
     @include mixin.default-section-style;
 
-    @include mixin.fonts-default-style($text-align: start);
+    @include mixin.fonts-default-style($text-align-h2: start);
 
     a {
         margin-top: 140px;
+    }
+
+    
+}
+
+
+@media (max-width: 740px){
+    .imageContainer {
+
+        a {
+            margin-top: 80px;
+        }
     }
 }

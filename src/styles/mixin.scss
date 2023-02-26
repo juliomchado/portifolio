@@ -9,22 +9,27 @@
     height: 100%;
 
     padding: 16px;
+
+
+    @media (max-width: 1024px) {
+        padding: 32px;
+    }
 }
 
-@mixin fonts-default-style($text-align: center) {
+@mixin fonts-default-style($text-align-h2: center, $text-align-p: justify) {
     h2 {
         width: 100%;
         font-size: 2.4rem;
         font-weight: 500;
         margin-bottom: 32px;
-        text-align: $text-align;
+        text-align: $text-align-h2;
     }
 
     p {
         width: 100%;
         font-size: 1.6rem;
         font-weight: 400;
-        text-align: justify;
+        text-align: $text-align-p;
 
         margin-bottom: 24px;
 
@@ -33,4 +38,30 @@
             margin-bottom: 0;
         }
     }
+
+    @media (max-width: 1024px) {
+        h2 {
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 32px;
+            text-align: $text-align-h2;
+        }
+    
+        p {
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-align: $text-align-p;
+    
+            margin-bottom: 24px;
+    
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+      }
+
+    
 }
