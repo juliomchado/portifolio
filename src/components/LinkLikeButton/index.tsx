@@ -15,7 +15,7 @@ export default function LinkLikeButton({ text, href, size = "md" }: LinkLikeButt
     var textUpperCase = text.toUpperCase();
   
     return (
-      <Link className={className} href={href}>
+      <Link target="_blank" className={className} href={href}>
         {textUpperCase}
       </Link>
     );

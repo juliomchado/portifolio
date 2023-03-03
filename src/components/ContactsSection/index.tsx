@@ -39,7 +39,7 @@ export default function ContactsSection() {
             <div>
                 <p> Clique no botão abaixo para me enviar detalhes sobre seu projeto ou vaga em aberto e vamos conversar sobre como posso ajudá-lo a alcançar seus objetivos.</p>
 
-                <LinkLikeButton href="#" size="md" text="Entrar em contato" />
+                <LinkLikeButton href="https://forms.gle/NVcyezwJSvBM9qb76" size="md" text="Entrar em contato" />
             </div>
         </section>
     )
